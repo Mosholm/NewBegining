@@ -29,7 +29,7 @@ body,
 html {
   height: 100%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 main {
@@ -70,9 +70,8 @@ main {
 
 .scroll {
   text-align: center;
-  top: 80vh;
   text-decoration: underline;
-  margin-top: 22em;
+  margin-top: 10em;
 }
 
 /*links*/
@@ -130,15 +129,17 @@ footer ul li {
 }
 .projectGallery ul li {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 5vw;
-  margin: 2vw 0;
+  margin: 2vw;
+  padding-bottom: 2vw;
   align-items: center;
+  border-bottom: 1px solid var(--black);
 }
 
-.discription {
+/* .description {
   max-width: 70%;
-}
+} */
 
 .projectImage {
   display: flex;
@@ -147,14 +148,18 @@ footer ul li {
 }
 
 .projectImage img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.description p {
+  margin: 20px 0;
 }
 
 /*handwriting*/
 .handwriting {
   border: none;
   width: 40%;
-
 }
 #first {
   stroke-dasharray: 1129.7293701171875;
@@ -162,7 +167,6 @@ footer ul li {
 
   animation: m 0.8s ease-in;
   animation-fill-mode: forwards;
-
 }
 
 @keyframes m {
@@ -214,8 +218,17 @@ footer ul li {
 }
 
 /*portfolio circle*/
+
+.gallery {
+  width: 90vw;
+  display: grid;
+
+  min-height: 400px;
+}
+
 #landing {
   position: relative;
+  /* top: 7vw; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -226,11 +239,9 @@ footer ul li {
 
 .landingcontainer {
   position: absolute;
-  top: 5vw;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  width: 50%;
+  height: 50%;
 }
 
 .out,
