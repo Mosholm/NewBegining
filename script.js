@@ -8,3 +8,5 @@ window.addEventListener("load", () => {
     const preloaderDemo = document.querySelector(".preloaderDemo");
     preloaderDemo.classList.add("done");
   });
+
+

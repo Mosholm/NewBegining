@@ -125,11 +125,15 @@ footer ul li {
 }
 
 /*Project gallery*/
-
+.projectGallery {
+  margin-top: 3vw;
+}
 .projectGallery ul li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 5vw;
+  margin: 2vw 0;
+  align-items: center;
 }
 
 .discription {
@@ -146,6 +150,117 @@ footer ul li {
   width: 100%;
 }
 
+/*handwriting*/
+.handwriting {
+  border: none;
+  width: 40%;
+
+}
+#first {
+  stroke-dasharray: 1129.7293701171875;
+  stroke-dashoffset: 1129.7293701171875;
+
+  animation: m 0.8s ease-in;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes m {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#second {
+  stroke-dasharray: 724.6718139648438;
+  stroke-dashoffset: 724.6718139648438;
+
+  animation: os 1s 0.8s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes os {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#third {
+  stroke-dasharray: 871.1315307617188;
+  stroke-dashoffset: 871.1315307617188;
+
+  animation: ho 1s 1.7s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ho {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#four {
+  stroke-dasharray: 646.6912841796875;
+  stroke-dashoffset: 646.6912841796875;
+
+  animation: lm 1.4s 2.7s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lm {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*portfolio circle*/
+#landing {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.landingcontainer {
+  position: absolute;
+  top: 5vw;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.out,
+.inner {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.out img {
+  animation: rotation 130s infinite linear;
+}
+
+.inner img {
+  animation: rotation 50s reverse linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
 /*preloader*/
 
 .preloaderBg {
