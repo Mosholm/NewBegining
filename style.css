@@ -1,9 +1,8 @@
 :root {
-  --accent_color: #4056a1;
-  --accent_color_2: #f13c20;
-  --accent_color_3: #efe2ba;
+  --accent_color: #195cc8;
+  --accent_color_2: #e94f37;
+  --accent_color_3: #26a671;
   --white: #eae4d7;
-  /* --white: #fefefa; */
   --black: #141414;
   --header_font: "Fraunces", serif;
   --body_font: "Roboto", sans-serif;
@@ -36,7 +35,9 @@ main {
   margin: 0 4vw;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
 }
 
@@ -48,17 +49,17 @@ h1, h2, h3 {
   animation-fill-mode: forwards;
   min-width: 340px;
   color: var(--accent_color);
-   transform: translatex(-100%);
+  transform: translatex(-100%);
 }
 
 @keyframes welcome-load {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 #welcomeText p {
   font-weight: 700;
@@ -105,7 +106,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   padding: 2em;
-  background-color: var(--accent_color_2);
+  background-color: var(--accent_color);
   color: var(--white);
 }
 
@@ -152,7 +153,7 @@ footer ul li {
   margin: 2vw;
   padding: 10vw 0;
   align-items: center;
-  border-bottom: 1px solid var(--accent_color);
+  border-bottom: 3px solid var(--accent_color);
 }
 
 /* .description {
@@ -171,17 +172,17 @@ footer ul li {
   height: auto;
 }
 
-.description p, .aboutSection p {
+.description p,
+.aboutSection p {
   margin: 20px 0 0 0;
 }
-
 
 .projectImage a,
 a:visited {
   text-decoration: none;
   font-weight: bold;
   color: var(--accent_color);
-  transition: all 0.6s;
+  transition: all 0.7s;
 }
 
 .projectImage a:hover {
@@ -189,7 +190,6 @@ a:visited {
   font-size: 1.05rem;
   text-decoration: underline;
 }
-
 
 /*handwriting*/
 .handwriting {
@@ -254,22 +254,21 @@ a:visited {
 
 /*aboutSection*/
 .aboutSection {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 10vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vw 0;
 }
 .aboutSection .textElement {
   margin: 0;
 }
 
-.contactInfo{
+.contactInfo {
   padding: 5vw 0 0 0;
 }
-.contactInfo ul li{
+.contactInfo ul li {
   list-style: none;
 }
-
 
 /*preloader*/
 
