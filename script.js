@@ -1,12 +1,14 @@
 // pageloader site
 
-window.addEventListener("load", () => {
-    console.log("loaded");
-    const preloader = document.querySelector(".preloaderBg");
-    preloader.classList.add("done");
-  
-    const preloaderDemo = document.querySelector(".preloaderDemo");
-    preloaderDemo.classList.add("done");
-  });
+function counter() {
+  var count = setInterval(function(){
+    var c = parseInt($('.counter').text());
+    $('.counter').text((++c).toString());
+    if (c === 100) {
+      clearInterval(count);
+      $('.counter').addClass('hide')
+    }
+  },60)
+}
 
-
+counter()
